@@ -4,20 +4,23 @@
     "password": null,
     "database": "shopapp_online",
     "host": "127.0.0.1",
+    "port": 3309,
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": null,
-    "database": "database_test",
+    "database": "shopapp_online_test",
     "host": "127.0.0.1",
+    "port": 3309,
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": null,
-    "database": "database_production",
+    "database": "shopapp_online_prod",
     "host": "127.0.0.1",
+    "port": 3309,
     "dialect": "mysql"
   }
 }

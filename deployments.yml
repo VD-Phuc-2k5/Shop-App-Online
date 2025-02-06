@@ -4,9 +4,12 @@ services:
     container_name: mysql_container
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+      MYSQL_DATABASE: shopapp_online
     ports:
-      - "3306:3306"
+      - "3309:3306"
+    volumes:
+      - ./shopapp_online.sql:/docker-entrypoint-initdb.d/shopapp_online.sql
     networks:
       - shopapp-online
 
