@@ -159,3 +159,7 @@ Ref: "banners".id < "banner_details".banner_id
 # Download babel node
 
 - cmd: yarn add --dev @babel/core @babel/node @babel/preset-env
+
+# Docker compose
+
+- cmd: docker compose -f ./deployments.yml up -d
