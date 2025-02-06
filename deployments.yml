@@ -7,3 +7,25 @@ services:
       MYSQL_ROOT_PASSWORD: 123
     ports:
       - "3306:3306"
+    networks:
+      - shopapp-online
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_container
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - "90:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      UPLOAD_LIMIT: 500M
+    networks:
+      - shopapp-online
+
+networks:
+  shopapp-online:
+    name: shopapp-online
+    driver: bridge

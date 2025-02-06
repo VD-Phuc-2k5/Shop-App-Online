@@ -163,3 +163,7 @@ Ref: "banners".id < "banner_details".banner_id
 # Docker compose
 
 - cmd: docker compose -f ./deployments.yml up -d
+
+# mysql_container bash
+
+-cmd : docker exec -it mysql_container bash
