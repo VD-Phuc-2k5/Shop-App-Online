@@ -62,8 +62,11 @@ To set up the project, follow these steps:
    npm i
    ```
 3. Download Docker **https://www.docker.com/products/docker-desktop**
-4. Docker Container, phpMyAdmin:
-
+4. Create Docker Container And Download PhpMyAdmin:
+- Run Comnand:
+  ```bash
+  docker compose -f ./deployments.yml up -d
+  ```
 - Diagram database (dbdiagram.io):
   <details>
    <summary>Diagram Design</summary>
@@ -194,11 +197,6 @@ To set up the project, follow these steps:
 </details>
 
 ![image](diagram_db.png)
-
-- Run Comnand:
-  ```bash
-  docker compose -f ./deployments.yml up -d
-  ```
 
 # Run Project:
  - Run Docker Desktop
