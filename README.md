@@ -200,13 +200,21 @@ To set up the project, follow these steps:
   docker compose -f ./deployments.yml up -d
   ```
 
-5. Run Project:
-   - Run Docker Desktop
-   - client:
+# Run Project:
+ - Run Docker Desktop
+ - Client:
+   - Open terminal and run Command:
      ```bash
      npm run dev
      ```
-   - server:
+ - Server:
+   - Create .env file:
+     ```bash
+       PORT = 3000
+       DATABASE_PORT = 3309
+       NODE_ENV = "development"
+     ```
+   - Open terminal and run Command:
      ```bash
      npm start
      ```
