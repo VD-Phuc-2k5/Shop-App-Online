@@ -6,31 +6,31 @@ This repository contains the source code for a small e-commerce shop application
 
 The project aims to provide hands-on practice in building basic e-commerce features such as:
 
-- User registration and login
-- Product listing and searching
-- Shopping cart management
-- Order processing
-- Payment gateway integration (not implemented yet)
-- Session management
-- Basic security measures
+- [ ] User registration and login
+- [ ] Product listing and searching
+- [ ] Shopping cart management
+- [ ] Order processing
+- [ ] Payment gateway integration (not implemented yet)
+- [ ] Session management
+- [ ] Basic security measures
 
 ## Key Features
 
 ### Frontend
 
-1. [ ] Clean and user-friendly interface for product listing
-2. [ ] Search functionality by product name or category
-3. [ ] Product image gallery with thumbnails
-4. [ ] Shopping cart display with total price
-5. [ ] Add to cart functionality
-6. [ ] User profile section (with photo upload)
+1. Clean and user-friendly interface for product listing
+2. Search functionality by product name or category
+3. Product image gallery with thumbnails
+4. Shopping cart display with total price
+5. Add to cart functionality
+6. User profile section (with photo upload)
 
 ### Backend
 
-1. [ ] RESTful API endpoints for product management
-2. [ ] Secure login and registration system
-3. [ ] Payment gateway integration (currently not implemented)
-4. [ ] Order tracking system
+1. RESTful API endpoints for product management
+2. Secure login and registration system
+3. Payment gateway integration (currently not implemented)
+4. Order tracking system
 
 ## Technology Stack
 
