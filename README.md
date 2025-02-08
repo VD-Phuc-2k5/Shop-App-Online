@@ -211,6 +211,18 @@ To set up the project, follow these steps:
      npm start
      ```
 
+# References
+1. [Joi Documentation](https://www.npmjs.com/package/joi)
+2. [Node.js Offical Website](https://nodejs.org/)
+3. [Express.js Project Page](https://github.com/expressjs/express)
+4. [MySQL Offical Website](https://www.mysql.com/)
+5. [Docker Desktop Guide](https://docs.docker.com/guides/)
+
+
+# License
+
+This project is free to use, modify, and distribute under the MIT License.
+
 <!-- ## Migrate (node js - express)
 
 - install mysql2 -> cmd: yarn add mysql2
