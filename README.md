@@ -18,19 +18,19 @@ The project aims to provide hands-on practice in building basic e-commerce featu
 
 ### Frontend
 
-1. [] Clean and user-friendly interface for product listing
-2. [] Search functionality by product name or category
-3. [] Product image gallery with thumbnails
-4. [] Shopping cart display with total price
-5. [] Add to cart functionality
-6. [] User profile section (with photo upload)
+1. [ ] Clean and user-friendly interface for product listing
+2. [ ] Search functionality by product name or category
+3. [ ] Product image gallery with thumbnails
+4. [ ] Shopping cart display with total price
+5. [ ] Add to cart functionality
+6. [ ] User profile section (with photo upload)
 
 ### Backend
 
-1. [] RESTful API endpoints for product management
-2. [] Secure login and registration system
-3. [] Payment gateway integration (currently not implemented)
-4. [] Order tracking system
+1. [ ] RESTful API endpoints for product management
+2. [ ] Secure login and registration system
+3. [ ] Payment gateway integration (currently not implemented)
+4. [ ] Order tracking system
 
 ## Technology Stack
 
@@ -204,7 +204,7 @@ To set up the project, follow these steps:
    - Run Docker Desktop
    - client:
      ```bash
-      npm run dev
+     npm run dev
      ```
    - server:
      ```bash
