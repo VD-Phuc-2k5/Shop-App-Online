@@ -191,7 +191,7 @@ To set up the project, follow these steps:
        Ref: "products".id < "banner_details".product_id
        Ref: "banners".id < "banner_details".banner_id
 
-  </details>
+</details>
 
 ![image](diagram_db.png)
 
