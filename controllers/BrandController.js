@@ -53,13 +53,31 @@ export async function insertBrand(req, res) {
 }
 
 export async function deleteBrand(req, res) {
-  res.status(200).json({
-    message: "xóa thương hiệu thành công!",
+  const { id } = req.params;
+  const deleted = await db.brand.destroy({
+    where: { id },
   });
+
+  return deleted
+    ? res.status(200).json({
+        message: "Xóa thương hiệu thành công!",
+      })
+    : res.status(404).json({
+        message: "Không tìm thấy thương hiệu với ID này",
+      });
 }
 
 export async function updateBrand(req, res) {
-  res.status(200).json({
-    message: "cập nhật thương hiệu thành công!",
+  const { id } = req.params;
+  const updatedBrand = await db.brand.update(req.body, {
+    where: { id },
   });
+
+  return updatedBrand[0] > 0
+    ? res.status(200).json({
+        message: "Cập nhật thương hiệu thành công!",
+      })
+    : res.status(404).json({
+        message: "Thương hiệu không tìm thấy!",
+      });
 }
