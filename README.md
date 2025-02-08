@@ -53,7 +53,7 @@ The project is built using the following technologies:
 
 To set up the project, follow these steps:
 
-1. Install Node.js and npm:
+1. Clone the repository:
    ```bash
    git clone https://github.com/VD-Phuc-2k5/Shop-App-Online
    ```
