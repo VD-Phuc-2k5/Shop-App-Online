@@ -1,6 +1,6 @@
-function validate(cb) {
+function validate(requestType) {
   return async (req, res, next) => {
-    const { error, value } = cb.validate(req.body);
+    const { error, value } = requestType.validate(req.body);
 
     if (error) {
       return res.status(400).json({

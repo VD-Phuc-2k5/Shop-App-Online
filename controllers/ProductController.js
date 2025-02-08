@@ -62,16 +62,34 @@ export async function insertProduct(req, res) {
 }
 
 export async function deleteProduct(req, res) {
-  res.status(200).json({
-    message: "xóa sản phẩm thành công!",
+  const { id } = req.params;
+  const deleted = await db.product.destroy({
+    where: { id },
   });
+
+  return deleted
+    ? res.status(200).json({
+        message: "xóa sản phẩm thành công!",
+      })
+    : res.status(404).json({
+        message: "Không tìm thấy sản phẩm với ID này",
+      });
 }
 
 export async function updateProduct(req, res) {
-  res.status(200).json({
-    message: "cập nhật sản phẩm thành công!",
+  const { id } = req.params;
+  const updatedProduct = await db.product.update(req.body, {
+    where: { id },
   });
+  return updatedProduct[0] > 0
+    ? res.status(200).json({
+        message: "Cập nhật sản phẩm thành công!",
+      })
+    : res.status(404).json({
+        message: "Sản phẩm không tìm thấy!",
+      });
 }
+
 // fake data
 [
   {

@@ -1,5 +1,4 @@
 import Joi from "joi";
-import { JoinSQLFragmentsError } from "sequelize/lib/utils/join-sql-fragments";
 
 class InsertProductRequest {
   constructor(data) {

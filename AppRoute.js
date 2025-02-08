@@ -6,7 +6,8 @@ import * as OrderController from "./controllers/OrderController";
 import * as OrderDetailController from "./controllers/OrderDetailController";
 import asyncHandler from "./middlewares/asyncHandler";
 import validate from "./middlewares/validate";
-import InsertProductRequest from "./DTOs/requests/InsertProductRequest";
+import InsertProductRequest from "./DTOs/requests/product/InsertProductRequest";
+import UpdateProductRequest from "./DTOs/requests/product/updateProductRequest";
 
 const router = express.Router();
 
@@ -20,7 +21,11 @@ export default function AppRoute(app) {
     asyncHandler(ProductController.insertProduct)
   );
   router.delete("/products/:id", asyncHandler(ProductController.deleteProduct));
-  router.put("/products/:id", asyncHandler(ProductController.updateProduct));
+  router.put(
+    "/products/:id",
+    validate(UpdateProductRequest),
+    asyncHandler(ProductController.updateProduct)
+  );
 
   // Category Routes
   router.get("/categories", asyncHandler(CategoryController.getCategories));

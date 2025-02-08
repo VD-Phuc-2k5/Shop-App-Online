@@ -8,8 +8,8 @@ services:
       MYSQL_DATABASE: shopapp_online
     ports:
       - "3309:3306"
-    volumes:
-      - ./shopapp_online.sql:/docker-entrypoint-initdb.d/shopapp_online.sql
+    # volumes:
+    #   - ./shopapp_online.sql:/docker-entrypoint-initdb.d/shopapp_online.sql
     networks:
       - shopapp-online
 
