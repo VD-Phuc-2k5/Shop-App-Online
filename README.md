@@ -63,7 +63,7 @@ To set up the project, follow these steps:
    ```
 3. Download Docker **https://www.docker.com/products/docker-desktop**
 4. Create Docker Container And Download PhpMyAdmin:
-- Run Comnand:
+- Open docker desktop, run comnand in command prompt:
   ```bash
   docker compose -f ./deployments.yml up -d
   ```
